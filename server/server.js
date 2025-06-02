@@ -3,8 +3,11 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import connectDB from './config/db.js'
 
-import authRoutes from './routes/authRoute.js'
-import userRoutes from './routes/userRoute.js'
+import authRoute from "./routes/authRoute.js";
+import userRoute from "./routes/userRoute.js";
+import chatRoute from "./routes/chatRoute.js";
+import codeRoute from "./routes/codeRoute.js";
+import submissionRoute from "./routes/submissionRoute.js";
 
 //env config
 dotenv.config()
@@ -25,8 +28,11 @@ app.get("/", (req, res) => {
   res.send("API is working");
 });
 
-app.use("/api/auth", authRoutes);
-app.use("/api/users", userRoutes);
+app.use("/api/auth", authRoute);
+app.use("/api/users", userRoute);
+app.use("/api/chat", chatRoute);
+app.use("/api/code", codeRoute);
+app.use("/api/submissions", submissionRoute);
 
 //port
 const PORT = process.env.PORT || 5000
