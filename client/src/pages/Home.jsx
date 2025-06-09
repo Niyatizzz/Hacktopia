@@ -98,7 +98,7 @@ export default function HackTopiaLanding() {
         <div className={`flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 transition-all duration-1000 delay-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <button className="group px-8 py-4 border-2 border-gray-600 rounded-xl hover:bg-gradient-to-r hover:from-purple-600 hover:to-cyan-600 hover:border-transparent transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20 transform hover:scale-105 flex items-center space-x-3">
             <Rocket className="h-6 w-6 group-hover:text-white" />
-            <span className="text-lg font-semibold group-hover:text-white">Find Team</span>
+            <span className="text-lg font-semibold group-hover:text-white">Join Hackathon</span>
           </button>
           
           <button className="group px-8 py-4 border-2 border-gray-600 rounded-xl hover:bg-gradient-to-r hover:from-purple-600 hover:to-cyan-600 hover:border-transparent transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20 transform hover:scale-105 flex items-center space-x-3">
